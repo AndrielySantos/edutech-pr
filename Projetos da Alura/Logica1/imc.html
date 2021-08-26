@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<h1> Cálculo de Imc (indice d Massa corporal) </h1>
+<br>
+<script>
+function pulalinha()
+
+   {document.write("<br><br>");}
+
+function mostra(frase) {
+	document.write(frase);
+    pulalinha()
+    	
+    }
+function calculaImc(altura1, peso1, altura2, peso2)
+
+    {
+    var imc1 = peso1/ (altura1 * altura1);
+    var imc2 = peso2 / (altura2 * altura2); 
+    var imcTotal = imc1+imc2
+   
+    mostra("O imc do Flávio é " + Math.round(imc1));
+    mostra(" O imc do Amigo é " + Math.round(imc2));
+    mostra(" A soma dos imc's é " + Math.round(imcTotal));
+                                                     }
+    calculaImc(1.71, 73, 1.72, 68);
+  
+
+</script>

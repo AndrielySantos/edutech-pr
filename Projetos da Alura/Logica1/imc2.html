@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<h1> Cálculo de Imc (indice de Massa corporal) </h1>
+<br>
+<script>
+function pulalinha()
+
+   {document.write("<br><br>");}
+
+function mostra(frase) {
+	document.write(frase);
+    pulalinha()
+    	
+    }
+function calculaImc(altura, peso)
+
+    {
+    //var imc = peso / (altura * altura);
+    //return Math.round(imc);
+    return Math.round(peso / (altura * altura));     
+                      }
+
+    var imcFlavio = calculaImc(1.71, 73);
+    var imcAmigo = calculaImc(1.72, 68);
+    var somaTotal = imcFlavio + imcAmigo
+
+   // mostra( " O imc do Flávio é " + imcFlavio);
+   // mostra( " O imc do Amigo é " + imcAmigo);
+   // mostra( " A soma dos imc's é " + somaTotal)
+    
+    var nome = prompt(" Informe seu nome ")
+    var alturaIformada = prompt( nome + ", Informe sua altura");
+    var pesoImformado = prompt( nome + ", Informe seu peso");
+    var imc = calculaImc(alturaIformada, pesoImformado);
+
+    mostra( nome + ", o seu IMC é " + imc );
+
+    if(imc < 18.5) 
+        { mostra("Você está abaixo do recomendado.")}
+
+    if(imc > 24.9)
+        { mostra("Você está acima do recomendado.")}
+    
+    if(imc >= 18.5 && imc <= 24.9)
+        {mostra("Seu imc está excelente")}
+                                         
+</script>  

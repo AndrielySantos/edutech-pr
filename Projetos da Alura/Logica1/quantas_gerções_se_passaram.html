@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+
+	function pularlinha()  { document.write("<br>")}
+	function mostra(frase) { document.write(frase)
+	                         pularlinha()         }           
+	var ano = 2021
+
+	var anosquepassaram = ano-1500
+
+	var mediadeanosparaterfilhos = 28
+
+	var quantidadedegerações = anosquepassaram/mediadeanosparaterfilhos
+
+	mostra("Desde 1500 até o ano atual (" + ano + ") se passaram "   + Math.round(quantidadedegerações) + " gerações.");
+
+</script>
