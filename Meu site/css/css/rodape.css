@@ -1,0 +1,14 @@
+footer {
+	text-align: center;
+	background: #000000;
+	padding: 1rem;
+}
+
+.copyright {
+	color: #FFFFFF;
+}
+@media screen and (max-width: 425px) {
+	.logo__rodape {
+		width: 50%;
+	}
+}
